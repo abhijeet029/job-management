@@ -1,0 +1,31 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.db
+*.log
+*.env
+*.venv/
+.env/
+.venv/
+instance/
+.mypy_cache/
+.pytest_cache/
+coverage/
+dist/
+
+# Ignore VS Code settings (optional)
+.vscode/
+
+# === Node / Angular ===
+node_modules/
+dist/
+out-tsc/
+.angular/
+.env
+*.log
+
+# === OS Files ===
+.DS_Store
+Thumbs.db
+
