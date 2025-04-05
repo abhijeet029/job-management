@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from app.api.routes import jobs, resume
+from app.api.routes import jobs, resume, auth
 from app.core.database import Base, engine
 from app.core.minioclient import create_minio_bucket
 from fastapi.middleware.cors import CORSMiddleware
@@ -24,3 +24,4 @@ Base.metadata.create_all(bind=engine)
 # Register routes
 app.include_router(jobs.router, prefix="/jobs", tags=["Jobs"])
 app.include_router(resume.router, prefix="/resume", tags=["Resume"])
+app.include_router(auth.router, prefix="/auth", tags=["Auth"])
