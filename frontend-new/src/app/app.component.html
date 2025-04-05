@@ -1,0 +1,3 @@
+<app-login *ngIf="!accessToken"></app-login>
+<app-header *ngIf="accessToken"></app-header>
+<router-outlet *ngIf="accessToken"></router-outlet>

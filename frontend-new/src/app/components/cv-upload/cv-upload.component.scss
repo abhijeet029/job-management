@@ -1,0 +1,26 @@
+.upload-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.upload-card {
+	width: 300px;
+}
+
+.file-upload-field {
+	width: 100%;
+}
+
+.error-message {
+	color: red;
+	display: flex;
+	align-items: center;
+	margin-top: 10px;
+}
+
+button {
+	width: 100%;
+	margin-top: 20px;
+}
